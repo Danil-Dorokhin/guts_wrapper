@@ -1,17 +1,38 @@
 {
   "name": "guts_wrapper",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.2",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/GutsWrapper.umd.cjs",
+  "module": "./dist/GutsWrapper.js",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/GutsWrapper.js",
+        "types": "./dist/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/GutsWrapper.umd.cjs",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
+    "prikol":"vite build && tsc src/libs/index.ts --declaration --emitDeclarationOnly --jsx react --esModuleInterop --outDir dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -26,3 +47,11 @@
     "vite": "^4.4.5"
   }
 }
+ 
+  
+  
+  
+  
+  
+  
+  

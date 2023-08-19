@@ -1,27 +1,12 @@
-# React + TypeScript + Vite
+Hey there, i was tired of writing thousands of reject and pending cases in my redux-toolkit setup so i created this abomination. It provides slices that can handle any action's loading (and errors or rejects in the future) and a wrapper component that can react accordingly to whatever action's status. I will rewrite readme someday.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Step I
+import {gutsLoading} from "guts_wrapper"
 
-Currently, two official plugins are available:
+Step II
+add gutsLoading to your combineReducers
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Step III
+wrap something in GutsWrapper (you can style it in any way like div) and pass action name to which it should react in props like <GutsWrapper action="reducerName/getSomethingList"></GutsWrapper>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+P.S. Its work in progress, reject and error handling will be added soon with custom loader support and flexiblity
