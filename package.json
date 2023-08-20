@@ -1,21 +1,21 @@
 {
   "name": "guts_wrapper",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/GutsWrapper.umd.cjs",
-  "module": "./dist/GutsWrapper.js",
+  "main": "./dist/guts_wrapper.umd.cjs",
+  "module": "./dist/guts_wrapper.js",
   "exports": {
     ".": {
       "import": {
-        "default": "./dist/GutsWrapper.js",
+        "default": "./dist/guts_wrapper.js",
         "types": "./dist/index.d.ts"
       },
       "require": {
-        "default": "./dist/GutsWrapper.umd.cjs",
+        "default": "./dist/guts_wrapper.umd.cjs",
         "types": "./dist/index.d.ts"
       }
     }
@@ -45,5 +45,15 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danil-Dorokhin/guts_wrapper.git"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "Danil Dorokhin",
+  "homepage": "https://github.com/Danil-Dorokhin/guts_wrapper.git#readme"
 }
