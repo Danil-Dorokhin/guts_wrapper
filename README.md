@@ -16,6 +16,29 @@ yarn add guts_wrapper
 ```
 
 ## Unveil the Secrets
+
+As mortal souls are drawn to the labyrinthine dance of reducers, one must beckon the `gutsLoading` slice from the void and entwine it into the fabric of your Redux sanctum. Prepare for the eldritch revelation that shall unfold before your very eyes.
+
+### The Ritual of Reducers
+
+In the hidden sigils of your reducers, an unholy amalgamation must transpire. From the cryptic depths of `reducers.js`, heed this conjuration:
+
+```javascript
+// reducers.js
+import { combineReducers } from 'redux';
+import { gutsLoading } from 'guts_wrapper';
+
+// Align the constellations with the roots of your other reducers
+const rootReducer = combineReducers({
+  // otherworldly reducers
+  gutsLoading,
+});
+
+// The cosmic sigil is complete
+export default rootReducer;
+```
+Behold, the gutsLoading sigil is etched into your Redux tapestry, ready to interweave its mystical threads into the grand tapestry of your arcane state.
+
 ### The Emanation of Example
 
 Envelope your components in the tendrils of the `GutsWrapper`, entwined with the ethereal `action` prop:
