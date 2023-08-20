@@ -43,7 +43,7 @@ Behold, the gutsLoading sigil is etched into your Redux tapestry, ready to inter
 
 Envelope your components in the tendrils of the `GutsWrapper`, entwined with the ethereal `action` prop:
 
-```bash
+```javascript
 import { GutsWrapper, LoadingFallback } from 'guts_wrapper';
 
 // Invoke the GutsWrapper, a manifestation from the mists of 'guts_wrapper'
