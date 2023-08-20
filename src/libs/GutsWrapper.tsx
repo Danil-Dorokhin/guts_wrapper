@@ -93,6 +93,6 @@ class GutsWrapperClass extends React.Component<GutsWrapperProps> {
   }
 }
 
-export const GutsWrapper = connect((state: any) => ({
-  loadingList: state.loading.loadingList,
+export default connect((state: any) => ({
+  loadingList: state.gutsLoading.loadingList,
 }))(GutsWrapperClass)

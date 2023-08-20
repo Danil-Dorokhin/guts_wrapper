@@ -10,14 +10,14 @@ const initialState: LoadingStoreType = {
   loadingList: [],
 }
 
-export const removeFromLoadingList = (arr: LoadingListType, v: any) => {
+const removeFromLoadingList = (arr: LoadingListType, v: any) => {
   const i = arr.findIndex(({ id }) => id === v)
   if (i === -1) return arr
   return [...arr.slice(0, i), ...arr.slice(i + 1)]
 }
 
-export const { reducer: gutsLoading } = createSlice({
-  name: 'loading',
+const { reducer: gutsLoading } = createSlice({
+  name: 'gutsLoading',
   initialState: initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -54,3 +54,5 @@ export const { reducer: gutsLoading } = createSlice({
       )
   },
 })
+
+export default gutsLoading
