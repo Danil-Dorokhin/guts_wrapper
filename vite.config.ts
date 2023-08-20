@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, './src/libs/index.ts'),
       name: 'Warpper for all your guts',
-      fileName: 'GutsWrapper'
+      fileName: (format) => `guts_wrapper.${format}.js`
     },
     rollupOptions: {
       external: ['react'],
