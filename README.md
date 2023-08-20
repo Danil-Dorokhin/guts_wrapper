@@ -1,4 +1,4 @@
-Hey there, i was tired of writing thousands of reject and pending cases in my redux-toolkit setup so i created this abomination. It provides slices that can handle any action's loading (and errors or rejects in the future) and a wrapper component that can react accordingly to whatever action's status. I will rewrite readme someday.
+Hey hey, people, i was tired of writing thousands of reject and pending cases in my redux-toolkit setup so i created this abomination. It provides slices that can handle any action's loading (and errors or rejects in the future) and a wrapper component that can react accordingly to whatever action's status. I will rewrite readme someday.
 
 Step I
 import {gutsLoading} from "guts_wrapper"
