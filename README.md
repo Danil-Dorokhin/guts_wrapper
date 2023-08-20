@@ -1,7 +1,7 @@
 # Guts Wrapper
 
 [![npm version](https://img.shields.io/npm/v/guts_wrapper.svg)](https://www.npmjs.com/package/guts_wrapper)
-[![License](https://img.shields.io/badge/license-Eldritch%20Mysteries-blue.svg)](https://github.com/your-username/guts_wrapper/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-Eldritch%20Mysteries-blue.svg)](https://github.com/Danil-Dorokhin/guts_wrapper/blob/master/LICENSE)
 
 ## Beyond the Veil of Loading
 
